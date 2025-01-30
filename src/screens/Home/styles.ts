@@ -1,42 +1,77 @@
 import { StyleSheet } from "react-native";
+import Theme from "../../theme";
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#131016',
-    padding: 24
+    paddingTop: 80,
+    backgroundColor: Theme.colors.GRAY_700,
+    alignItems: "center",
+    paddingBottom: 16
   },
-  header: {
-    height: 30,
-    width: 30,
-    backgroundColor: '#0D0D0D'
+  logo: {
+    width: 110,
+    height: 32,
+  },
+  textPurple: {
+    fontWeight: "bold",
+    color: Theme.colors.PURPLE_LIGHT,
+  },
+  textBlue: {
+    fontWeight: "bold",
+    color: Theme.colors.BLUE_LIGHT,
+  },
+  wrapper: {
+    flex: 0.8,
+    width: '100%',
+    position: 'absolute',
+    bottom: 0,
+    height: '86%',
+    padding: 24,
+    backgroundColor: Theme.colors.GRAY_600,
+  },
+  inputContainer: {
+    flexDirection: 'row',
+    marginTop: -56,
+    marginBottom: 32,
+    width: '100%',
   },
   input: {
-    flex: 1,
     height: 56,
-    backgroundColor: '#808080',
-    borderRadius: 5,
-    color: '#F2F2F2',
     padding: 16,
-    fontSize: 16,
-    marginRight: 12
-  },
-  buttonText: {
-    color: '#FFF',
-    fontSize: 24
+    borderRadius: 5,
+    flex: 1,
+    marginRight: 8,
+    color: Theme.colors.GRAY_100,
+    backgroundColor: Theme.colors.GRAY_500,
   },
   button: {
-    width: 56,
     height: 56,
-    borderRadius: 5,
-    backgroundColor: '#31CF67',
+    width: 56,
+    backgroundColor: Theme.colors.BLUE_DARK,
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    borderRadius: 6,
   },
-  form: {
-    width: '100%',
+  buttonIcon: {
+    height: 16,
+    width: 16,
+  },
+  header: {
     flexDirection: 'row',
-    marginTop: 36,
-    marginBottom: 42
+    justifyContent: 'space-between',
+    paddingBottom: 20,
   },
+  headerItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  valueCounter: {
+    marginLeft: 8,
+    borderRadius: 16,
+    paddingVertical: 2,
+    paddingHorizontal: 12,
+    backgroundColor: Theme.colors.GRAY_400,
+    color: Theme.colors.GRAY_100,
+  }
 })
